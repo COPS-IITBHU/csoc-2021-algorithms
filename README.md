@@ -8,11 +8,11 @@ will be adding must go in the proper folder.
 
 ## Guidelines
 
-- Only one algorithm should be included in your PR from the given list.
-- Your algorithm should goes in the proper language folder in the repository.
+- Your PR should include only one algorithm from the given list.
+- You should commit your code file in the respective language folder in the repository.
 - Scores of different algorithms are also listed in the algorithms list.
-- Try to write code on your own rather than coying it from other sources.
-- You can make new folder for new language if it not exists currently.
+- Try to write code on your own rather than copying it from other sources.
+- You can make a new folder for any language of your choice if it does not exist in the repo.
 
 ## List of Algorithms
 
