@@ -1,4 +1,4 @@
-//Somos insignificantes. Por mais que você programe sua vida, a qualquer momento tudo pode mudar.
+
 // If you have God on your side,everything becomes clear
 
 #include <bits/stdc++.h>
