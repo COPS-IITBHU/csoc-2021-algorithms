@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 int binarySearch(int arr[], int l, int r, int num)
 {
