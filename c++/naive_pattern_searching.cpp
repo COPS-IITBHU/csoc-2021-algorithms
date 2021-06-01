@@ -19,6 +19,7 @@ void patternSearch(char* pattern, char* string)
 	}
 }
 
+
 int main()
 {
 	char string[] = "I AM SHUBHANGI. AN AVID READER WHO LIKES TO LISTEN TO MUSIC.";
@@ -26,3 +27,4 @@ int main()
 	patternSearch(pattern, string);
 	return 0;
 }
+
