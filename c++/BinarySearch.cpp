@@ -1,27 +1,8 @@
 #include <iostream>
 using namespace std;
-int binarySearch(int arr[], int l, int r, int num)
-{
-    if (l <= r)
-    {
-        int mid = (l + r) / 2;
-        if (arr[mid] == num)
-        {
-            return mid;
-        }
 
-        if (arr[mid] > num)
-        {
-            return binarySearch(arr, l, mid - 1, num);
-        }
+int binarySearch(int arr[], int l , int r, int num);
 
-        if (arr[mid] < num)
-        {
-            return binarySearch(arr, mid + 1, r, num);
-        }
-    }
-    return -1;
-}
 int main()
 {
     int n, num;
@@ -45,4 +26,25 @@ int main()
 
     return 0;
 }
+int binarySearch(int arr[], int l, int r, int num)
+{
+    if (l <= r)
+    {
+        int mid = l + (r-1)/2;
+        if (arr[mid] == num)
+        {
+            return mid;
+        }
 
+        if (arr[mid] > num)
+        {
+            return binarySearch(arr, l, mid - 1, num);
+        }
+
+        if (arr[mid] < num)
+        {
+            return binarySearch(arr, mid + 1, r, num);
+        }
+    }
+    return -1;
+}
