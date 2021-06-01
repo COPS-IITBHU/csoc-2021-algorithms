@@ -1,30 +1,42 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void patternSearch(char* pattern, char* string)
+vector <int> search_stringSearch(string search_string,string string);
+
+int main()
 {
-	int m = strlen(pattern);
-	int n = strlen(string);
+	string s;
+    string search_s;
+	vector <int> index;
+	cout<<"Enter the string here : ";
+	getline(cin,s);
+	cout<<"Enter the pattern you want to search here : ";
+	getline(cin,search_s);
+	search_stringSearch(search_s, s);
+	index=search_stringSearch(search_s, s);
+	cout << "The entered search_string occurs in the entered stringing at:   "<<endl;
+	for(int i=0;i<index.size();i++)
+	cout<<index[i]<<" ";
+	return 0;
+}
+
+vector <int> search_stringSearch(string search_string,string string)
+{
+	int m = search_string.size();
+	int n = string.size();
+	vector <int> a;
 
 	for (int i = 0; i <= n - m; i++) {
 		int j;
 
 		for (j = 0; j < m; j++)
-			if (string[i + j] != pattern[j])
+			if (string[i + j] != search_string[j])
 				break;
         if (j == m)
-        //returning the index where "AN" occurs in "I AM SHUBHANGI. AN AVID READER WHO LIKES TO LISTEN TO MUSIC."
-			cout << "'AN' occurs in 'I AM SHUBHANGI. AN AVID READER WHO LIKES TO LISTEN TO MUSIC.' at :  "
-				 << i << endl;
+			a.push_back(i);
 	}
+	return a;
 }
 
 
-int main()
-{
-	char string[] = "I AM SHUBHANGI. AN AVID READER WHO LIKES TO LISTEN TO MUSIC.";
-	char pattern[] = "AN";
-	patternSearch(pattern, string);
-	return 0;
-}
 
