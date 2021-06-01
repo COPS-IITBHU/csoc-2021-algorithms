@@ -3,6 +3,7 @@ using namespace std;
 
 vector <int> search_stringSearch(string search_string,string string);
 
+
 int main()
 {
 	string s;
