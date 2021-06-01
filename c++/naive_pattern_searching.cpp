@@ -1,4 +1,6 @@
-#include <bits/stdc++.h>
+#include <vector>
+#include<strings.h>
+#include<iostream>
 using namespace std;
 
 vector <int> search_stringSearch(string search_string,string string);
@@ -38,6 +40,3 @@ vector <int> search_stringSearch(string search_string,string string)
 	}
 	return a;
 }
-
-
-
