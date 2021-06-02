@@ -17,7 +17,7 @@ int main()
 	getline(cin,search_s);
 	search_stringSearch(search_s, s);
 	index=search_stringSearch(search_s, s);
-	cout << "The entered search_string occurs in the entered stringing at:   "<<endl;
+	cout << "The entered pattern occurs in the entered string at:   "<<endl;
 	for(int i=0;i<index.size();i++)
 	cout<<index[i]<<" ";
 	return 0;
