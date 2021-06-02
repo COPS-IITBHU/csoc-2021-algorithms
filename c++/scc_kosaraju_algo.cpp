@@ -57,7 +57,7 @@ int main() {
 void topological_order(int v,vector<vector<int>> &adj,vector<bool>&used,stack<int>&order) {
     used[v] = true;
 
-    for (auto u : adj[v])
+    for (int u : adj[v])
         if (!used[u])
             topological_order(u,adj,used,order);
 
@@ -68,7 +68,7 @@ void dfs(int v,vector<vector<int>> &adj_reverse,vector<bool>&used,queue<int>&com
     used[v] = true;
     component.push(v);
 
-    for (auto u : adj_reverse[v])
+    for (int u : adj_reverse[v])
         if (!used[u])
             dfs(u,adj_reverse,used,component);
 }
