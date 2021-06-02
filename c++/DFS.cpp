@@ -2,15 +2,10 @@
 
 
 //dfs(depth first search using graph and list)
-
-#include <bits/stdc++.h>
+#include<iostream>
+#include<list>
+#include<unordered_map>
 using namespace std;
-typedef long long int ll;
-//int  t[1002][1002];
-typedef int64_t s64;
-typedef uint64_t u64;
-typedef uint32_t u32;
-typedef pair<int,int>ii;
 
 // this connected component is application of dfs(depth_first_search/traversal)
 
