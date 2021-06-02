@@ -24,8 +24,10 @@ void printJobScheduling(Job arr[], int n)
 	int result[n]; // to store sequence
 	bool slot[n];
 
+	// Initializing slot to be free
 	for (int i = 0; i < n; i++)
 		slot[i] = false;
+	
 	for (int i = 0; i < n; i++)
 	{
 		for (int j = min(n, arr[i].dead) - 1; j >= 0; j--)
