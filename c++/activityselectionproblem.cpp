@@ -25,7 +25,7 @@ using namespace std;
     int first =1;
     int actend = act[0][1]; 
   
-    //Iterating if the condition is satisfied ( start time of activity + 1 > end time of activity)
+    //Iterating if the condition is satisfied ( start time of (activity + 1) > end time of (activity))
     cout<<"The activities which r executed:";
     for(int i=0;i<n;i++){
         if(act[i][0]>=actend){
