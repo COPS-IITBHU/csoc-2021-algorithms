@@ -1,12 +1,29 @@
-#include <iostream> 
 
-#define lli long long int
-#define li long int
-#define ld long double
-#define f(i, n) for (int i; i < n; i++)
 
-using namespace std;
-const lli mod = 1e9 + 7;
+int binarySearch(int arr[], int l, int r, int x);
+
+
+int main()
+{
+    int n;
+    cout<<"Enter the number of elements"<<endl;
+    cin>>n;
+    int arr[n];
+    cout<<"Enter the elemets: "<<endl;
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
+    }
+    cout<<"Enter the number to search"<<endl;
+    int x;
+    cin>>x;
+  
+
+    int result = binarySearch(arr,0, n-1, x);
+    (result == -1)
+        ? cout << "Not available"
+        : cout << "Position: " << result+1;
+    return 0;
+}
 
 int binarySearch(int arr[], int l, int r, int x)
 {
@@ -25,20 +42,4 @@ int binarySearch(int arr[], int l, int r, int x)
     }
  
     return -1;
-}
-
-
-int main()
-{
-    ios_base::sync_with_stdio(0);
-    cin.tie(NULL);
-    int arr[] = {1, 2, 3, 4, 5};
-    int x = 3;
-    int n = sizeof(arr) / sizeof(arr[0]);
-
-    int result = binarySearch(arr,0, n-1, x);
-    (result == -1)
-        ? cout << "Not available"
-        : cout << "Position: " << result+1;
-    return 0;
 }
