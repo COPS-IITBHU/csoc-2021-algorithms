@@ -1,28 +1,7 @@
-//Algorithm for finding length longest increaing subsequence
+//Algorithm for finding length of longest increaing subsequence
 
 #include <iostream>
-#include <iomanip>
-#include <fstream>
-#include <sstream>
-#include <cmath>
-#include <cstdio>
-#include <string>
-#include <vector>
 #include <algorithm>
-#include <cstdlib>
-#include <cstring>
-#include <map>
-#include <queue>
-#include <set>
-#include <queue>
-#include <stack>
-#include <deque>
-#include <assert.h>
-#include <ctime>
-#include <bitset>
-#include <numeric>
-#include <complex>
-#include <valarray>
 #include<climits>
 using namespace std;
 typedef long long int z;
@@ -58,10 +37,6 @@ z LIS(z n, z arr[])
 //main starts here
 int main()
 {
-	ios_base::sync_with_stdio(0);
-	cin.tie(NULL);
-	cout.tie(NULL);
-    
     z n;
     cin>>n;
     z arr[n];
