@@ -23,7 +23,6 @@ int main(){
     cout<<"Enter second string : ";
     getline(cin,string2);
     int len2=string2.size();
-    cout<<(string1[len1-1]==string2[len2-1])<<"\n";
     if(len1==0 || len2==0)
          cout<<"The longest common subsequence is of 0 character";
     else{
