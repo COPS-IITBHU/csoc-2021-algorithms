@@ -17,17 +17,17 @@ int lcs(string s1,string s2)
     int m = s1.size() ;
     int n = s2.size() ;
 
-    int dp[m+1][n+1] ;
+    int dp[m+1][n+1] ; // 2d array for stroring the lcs of the strings with i, j lengths respectively.
 
     for(int i=0;i<=m;i++)
     {
         for(int j=0;j<=n;j++)
         {
-            if(i==0 || j==0)
+            if(i==0 || j==0) // length of longest common subsequence when either string is empty or both is empty
                 dp[i][j] = 0 ;
             else if(s1[i] == s2[j])
             {
-                dp[i][j] = 1+dp[i-1][j-1] ;
+                dp[i][j] = 1+dp[i-1][j-1] ;//adding one to the length if the char at positions are equal .
             }
             else
             {
