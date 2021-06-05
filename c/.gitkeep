@@ -1,0 +1,60 @@
+#include <stdio.h>
+#include  <stdlib.h>
+
+void max_subarray(int arr[], int n);
+
+
+int main()
+{
+    
+    int num;
+    printf("---------Currently list is empty ---------\n");
+    printf("enter no of elements in list : ");
+    scanf("%d",&num);
+    int list[num];
+    
+    printf("enter %d elements : ",num);
+    for(int i=0;i<num;i++)
+    {
+        scanf("%d",&list[i]);
+    }
+    max_subarray(list, num);
+    return 0;
+}
+
+
+void max_subarray(int list[], int n)
+{
+    int *arr = NULL;
+    int j, k, max_len = 0;
+    arr = (int*)malloc(sizeof(int) * n);
+    
+    for (j = 0; j < n; j++)
+    {
+        arr[j] = 1;
+    }
+    
+    
+    for (j = 1; j < n; j++)
+    {
+        for (k = 0; k < j; k++)
+        {
+            if (list[j] > list[k] && arr[j] < arr[k] + 1)
+            {
+                arr[j] = arr[k] + 1;
+            }
+        }
+    }
+    
+    
+    for (j = 0; j < n; j++)
+    {
+        if (max_len < arr[j])
+        {
+            max_len = arr[j];
+        }
+    }
+    free(arr);
+
+    printf("Required length : %d\n",max_len);
+}
