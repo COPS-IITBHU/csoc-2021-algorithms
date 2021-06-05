@@ -1,12 +1,14 @@
 /* Naive Search Algorithm has the worst case time complexity when compared to other algorithms for pattern searching in a string
 */
-var bigString = prompt("Enter string in which to search for pattern : ")
-var smallString = prompt("Enter the pattern string ")
+var string = prompt("Enter string in which to search for pattern : ")
+var patternString = prompt("Enter the pattern string ")
 
 var array=new Array();
 let k=0;
-
-function patternSearchInString(string, pattenString) {
+if (patternString.length > string.length) {
+    console.log("Pattern found: 0 times");
+} else {
+    function patternSearchInString(string, pattenString) {
 
   let count = 0;
   for (let i = 0; i < string.length; i++) {
@@ -23,14 +25,15 @@ function patternSearchInString(string, pattenString) {
   return count;
 }
 
-var count = patternSearchInString(bigString, smallString)
+var count = patternSearchInString(string, patternString)
 console.log("Pattern found: ",count ," times");
 
 if (count > 0) {
-    console.log("Positions at which the pattern occur")
+    console.log("Positions at which the pattern occur : ")
 
     for (k=0; k<count; k++){
     console.log("Index: ", array[k])
 
+}
 }
 }
