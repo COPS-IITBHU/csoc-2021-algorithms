@@ -13,11 +13,11 @@ int main()
 	vector <int> index;
 	cout<<"Enter the string here : ";
 	getline(cin,s);
-	cout<<"Enter the pattern you want to search here : ";
+	cout<<"Enter the atern you want to search here : ";
 	getline(cin,search_s);
 	search_stringSearch(search_s, s);
 	index=search_stringSearch(search_s, s);
-	cout << "The entered pattern occurs in the entered string at:   "<<endl;
+	cout << "The entered atern occurs in the entered string at:   "<<endl;
 	for(int i=0;i<index.size();i++)
 	cout<<index[i]<<" ";
 	return 0;
