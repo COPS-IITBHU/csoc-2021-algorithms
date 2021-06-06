@@ -30,7 +30,7 @@ int solveKT()
         for (int y = 0; y < N; y++)
             sol[x][y] = -1;
  
-    yMove[] is for next value of y coordinate */
+
     int xMove[8] = { 2, 1, -1, -2, -2, -1, 1, 2 };
     int yMove[8] = { 1, 2, 2, 1, -1, -2, -2, -1 };
  
