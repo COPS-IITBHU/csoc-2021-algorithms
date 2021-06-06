@@ -64,7 +64,8 @@ int main() {
 			cin>>arr[i][j];
 		}
 	}
-	if(!result((int*)arr,(int*)res,0,0,(int*)visited,0)){
+	if(m==1 && n==1) cout<<"1";
+	else if(!result((int*)arr,(int*)res,0,0,(int*)visited,0)){
 		cout<<"Cannot reach";
 	}
 	else{
