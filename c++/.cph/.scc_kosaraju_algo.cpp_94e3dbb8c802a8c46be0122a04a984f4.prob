@@ -1,1 +1,0 @@
-{"name":"Local: scc_kosaraju_algo","url":"/home/rahul/csoc/csoc-2021-algorithms/c++/scc_kosaraju_algo.cpp","tests":[{"id":1622622366998,"input":"3 3\n1 2\n2 3\n3 1","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/rahul/csoc/csoc-2021-algorithms/c++/scc_kosaraju_algo.cpp","group":"local","local":true}
