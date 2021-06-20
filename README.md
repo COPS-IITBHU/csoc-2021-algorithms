@@ -40,7 +40,7 @@ will be adding must go in the proper folder.
 - Kruskal’s Minimum Spanning Tree Algorithm
 - Huffman Coding
 - Prim’s Minimum Spanning Tree Algorithm
-- Dijkstra’s Shortest Path Algorithm
+- Dijkstra’s Shortest ah Algorithm
 - Job Sequencing Problem
 - K Centers Problem
 
@@ -53,12 +53,12 @@ will be adding must go in the proper folder.
 
 ### String Algorithms (Carries 2 points)
 
-- Naive Pattern Searching
+- Naive atern Searching
 - KMP Algorithm
 - Rabin-Karp Algorithm
 - Boyer Moore Algorithm – Bad Character Heuristic
 - Anagram Substring Search
-- Aho-Corasick Algorithm for Pattern Searching
+- Aho-Corasick Algorithm for atern Searching
 - Longest Even Length Substring such that Sum of First and Second Half is same
 
 ### Dynamic Programming and Backtracking (Carries 3 points)
@@ -78,7 +78,7 @@ will be adding must go in the proper folder.
 
 ### Graph Algorithms (Carries 3 points)
 
-- Longest Path in a Directed Acyclic Graph
+- Longest ah in a Directed Acyclic Graph
 - Topological Sorting
 - Snake and Ladder Problem
 - Biconnected Components
