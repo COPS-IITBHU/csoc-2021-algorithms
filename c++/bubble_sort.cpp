@@ -9,7 +9,7 @@ int main()
     int n = sizeof(a) / sizeof(a[0]);
     bubbleSort(a, n);
     cout << "Sorted Array in Ascending Order:\n";
-    for (int i = 0; i < n; ++i)
+    for (int i = 0; i < n; i++)
     {
         cout << "  " << a[i];
     }
